@@ -21,6 +21,7 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_SHARED_LIBRARIES += libdl
 
 LOCAL_CFLAGS += -fvisibility=hidden
+LOCAL_CFLAGS += -Wno-error
 
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 include $(BUILD_SHARED_LIBRARY)

@@ -20,6 +20,7 @@ LOCAL_SRC_FILES:= \
 	offload_visualizer.c
 
 LOCAL_CFLAGS+= -O2 -fvisibility=hidden
+LOCAL_CFLAGS+= -Wno-error
 
 ifneq ($(filter sdm660 sdm845 msm8998 apq8098_latv,$(TARGET_BOARD_PLATFORM)),)
     LOCAL_CFLAGS += -DCAPTURE_DEVICE=7
